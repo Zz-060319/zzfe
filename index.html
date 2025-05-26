@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!--标题-->
+    <header class="header">
+        <h1>菲儿 fei er</h1>
+        <p>扬州 | 信息工程系 | 计算机网络应用</p>
+    </header>
+    <!--导航-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><img src="images/2.jpg" class="face">xxx</div>
+
+            <button class="hbb" id="hbb">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="#" class="nav-link">个人介绍</a>
+                <a href="#" class="nav-link">教育背景</a>
+                <a href="#" class="nav-link">旅游日记</a>
+                <a href="#" class="nav-link">兴趣爱好</a>
+                <a href="#" class="nav-link">联系方式</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <script>
+        const hbb=document.getElementById('hbb');
+        const navlinks=document.querySelector('.nav-links');
+        hbb.addEventListener('click',()=>{
+          hbb.classList.toggle('active');
+          navlinks.classList.toggle('active')  
+        });
+    </script>
+    <!--内容区-->
+    <main class="main-content">
+        <div class="primary-content">
+            <div class="content-card">
+                <h2>个人介绍</h2>
+                <p>对自己的不满足，是任何真正有天才人的根本特征之一。</p>
+            </div>
+            <div class="content-card">
+                <h3>教育背景</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>初中</h4>
+                        <p>2016年-2022年</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>大专</h4>
+                        <p>2022年-2024年</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>实习</h4>
+                        <p>2024-至今</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-card">
+                <h3>旅游日记</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>2024.4</h4>
+                        <p><img src="images/3.jpg"></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2025.2</h4>
+                        <p><img src="images/4.jpg"></p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2025.4</h4>
+                        <p><img src="images/5.jpg"></p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        
+        <aside class="sideber">
+            <div class="content-card">
+                <h3>兴趣爱好</h3>
+                <ul>
+                    <li>唱歌</li>
+                    <li>追剧</li>
+                    <li>画画</li>
+                    <li>看书</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <!--底部-->
+    <footer>xxx的联系方式：11111111111 </footer>
+</body>
+
+</html>
